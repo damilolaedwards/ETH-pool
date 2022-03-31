@@ -4,7 +4,7 @@ async function main() {
   
   const ETHPool = await ethers.getContractFactory("ETHPool");
   const contract = ETHPool.attach(
-  "0x390c9a7d14B1D7b45244131260584bEc1E405dFF") // The deployed contract address
+  "0x66a8c77c801a8da9A8b39D3480fEB63FFA73AD54") // The deployed contract address
   console.log("Account balance: ", (await contract.ETHBalance()).toString());
 }
 

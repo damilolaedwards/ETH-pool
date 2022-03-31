@@ -75,10 +75,10 @@ $ npx hardhat coverage
 # Deployment & Etherscan verification
 
 Deployed Contract on Ropsten network
-ETHPool deployed to: 0x390c9a7d14B1D7b45244131260584bEc1E405dFF
+ETHPool deployed to: 0x66a8c77c801a8da9A8b39D3480fEB63FFA73AD54
 
 A verified version of the ETHPool contract on the Ropsten network is available at address
-https://ropsten.etherscan.io/address/0x390c9a7d14B1D7b45244131260584bEc1E405dFF#code
+https://ropsten.etherscan.io/address/0x66a8c77c801a8da9A8b39D3480fEB63FFA73AD54#code
 
 # Interact with the contract
 

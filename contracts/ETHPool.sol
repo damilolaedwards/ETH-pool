@@ -1,8 +1,6 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "hardhat/console.sol";
-
 ///@title ETHPool Challenge
 ///@author Damilola Edwards
 ///@notice ETHPool provides a service where people can deposit ETH and they will receive weekly rewards
