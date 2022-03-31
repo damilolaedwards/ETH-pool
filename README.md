@@ -47,49 +47,35 @@ $ npx hardhat coverage
 ## Test Coverage
 
 - |--------------|----------|----------|----------|----------|----------------|
-  |File | % Stmts | % Branch | % Funcs | % Lines |Uncovered Lines |
+  |File          |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
   |--------------|----------|----------|----------|----------|----------------|
-  | contracts/ | 100 | 70 | 100 | 100 | |
-  | ETHPool.sol | 100 | 70 | 100 | 100 | |
+  | contracts/   |      100 |       70 |      100 |      100 |                |
+  |  ETHPool.sol |      100 |       70 |      100 |      100 |                |
   |--------------|----------|----------|----------|----------|----------------|
-  |All files | 100 | 70 | 100 | 100 | |
+  |All files     |      100 |       70 |      100 |      100 |                |
   |--------------|----------|----------|----------|----------|----------------|
 
 ## Expected Gas Costs
 
 - ·------------------------------|---------------------------|-------------|-----------------------------·
-  | Solc version: 0.8.4 · Optimizer enabled: true · Runs: 200 · Block limit: 30000000 gas │
+  |     Solc version: 0.8.4      ·  Optimizer enabled: true  ·  Runs: 200  ·  Block limit: 30000000 gas  │
   ·······························|···························|·············|······························
-  | Methods │
+  |  Methods                                                                                             │
   ·············|·················|·············|·············|·············|···············|··············
-  | Contract · Method · Min · Max · Avg · # calls · usd (avg) │
+  |  Contract  ·  Method         ·  Min        ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
   ·············|·················|·············|·············|·············|···············|··············
-  | ETHPool · deposit · 55496 · 75396 · 69021 · 4 · - │
+  |  ETHPool   ·  deposit        ·      55496  ·      75396  ·      69021  ·            4  ·          -  │
   ·············|·················|·············|·············|·············|···············|··············
-  | ETHPool · depositReward · 50902 · 70802 · 64169 · 3 · - │
+  |  ETHPool   ·  depositReward  ·      50902  ·      70802  ·      64169  ·            3  ·          -  │
   ·············|·················|·············|·············|·············|···············|··············
-  | ETHPool · withdraw · 38209 · 42961 · 40585 · 8 · - │
+  |  ETHPool   ·  withdraw       ·      38209  ·      42961  ·      40585  ·            8  ·          -  │
   ·············|·················|·············|·············|·············|···············|··············
-  | Deployments · · % of limit · │
+  |  Deployments                 ·                                         ·  % of limit   ·             │
   ·······························|·············|·············|·············|···············|··············
-  | ETHPool · - · - · 410628 · 1.4 % · - │
+  |  ETHPool                     ·          -  ·          -  ·     410628  ·        1.4 %  ·          -  │
   ·------------------------------|-------------|-------------|-------------|---------------|-------------·
 
-# Etherscan verification
-
-To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
-
-In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
-
-```shell
-npx hardhat run --network ropsten scripts/deploy.ts
-```
-
-Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
-
-```shell
-npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS
-```
+# Deployment & Etherscan verification
 
 Deployed Contract on Ropsten network
 ETHPool deployed to: 0x390c9a7d14B1D7b45244131260584bEc1E405dFF
@@ -104,7 +90,3 @@ To query the total amount of ETH held in the contract, run this command
 ```shell
 npx hardhat run --network ropsten scripts/balance.ts
 ```
-
-# Performance optimizations
-
-For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable `TS_NODE_TRANSPILE_ONLY` to `1` in hardhat's environment. For more details see [the documentation](https://hardhat.org/guides/typescript.html#performance-optimizations).
