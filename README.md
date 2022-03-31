@@ -59,18 +59,18 @@ $ npx hardhat coverage
 
 
   
-  |  Contract  |  Method         |  Min        |  Max        |  Avg        |  # calls      |  usd (avg)  │
-  |------------|-----------------|-------------|-------------|-------------|---------------|-------------|
-  |  ETHPool   | deposit         |      55496  |      75396  |      69021  |            4  |      -      │
-  |            |                 |             |             |             |               |             |
-  |  ETHPool   | depositReward   |      50902  |      70802  |      64169  |            3  |      -      │
-  |            |                 |             |             |             |               |             |
-  |  ETHPool   |  withdraw       |      38209  |      42961  |      40585  |            8  |      -      │
-  |            |                 |             |             |             |               |             |
-  |Deployments |                 |             |             |             |   % of limit  |             │
-  |            |                 |             |             |             |               |             |
-  |  ETHPool   |                 |          -  |          -  |     410628  |        1.4 %  |      -      │
-  |            |                 |             |             |             |               |             |
+  |  Contract  |  Method         |  Min        |  Max        |  Avg        |  # calls      |  usd (avg)  
+  |------------|-----------------|-------------|-------------|-------------|---------------|-------------
+  |  ETHPool   | deposit         |      55496  |      75396  |      69021  |            4  |      -      
+  |            |                 |             |             |             |               |             
+  |  ETHPool   | depositReward   |      50902  |      70802  |      64169  |            3  |      -      
+  |            |                 |             |             |             |               |             
+  |  ETHPool   |  withdraw       |      38209  |      42961  |      40585  |            8  |      -      
+  |            |                 |             |             |             |               |             
+  |Deployments |                 |             |             |             |   % of limit  |             
+  |            |                 |             |             |             |               |             
+  |  ETHPool   |                 |          -  |          -  |     410628  |        1.4 %  |      -      
+  |            |                 |             |             |             |               |             
 
 # Deployment & Etherscan verification
 
